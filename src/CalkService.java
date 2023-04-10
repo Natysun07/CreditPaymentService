@@ -3,10 +3,10 @@ public class CalkService {
         double monthPercent;
         double monthPayment;
         double degree;
-        double x;
+        double amount;
         monthPercent = b / c / 100;
-        x = (1 + monthPercent);
-        degree = Math.pow(x, d);
+        amount = (1 + monthPercent);
+        degree = Math.pow(amount, d);
 
         monthPayment = a * monthPercent * (degree) / ((degree) - 1);
         return monthPayment;
