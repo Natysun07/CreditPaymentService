@@ -1,14 +1,14 @@
 public class CalkService {
-    public double calculate(int a, double b, int c, int d) {
+    public double calculate(int amountCredit, double percent, int month, int paymentMonth) {
         double monthPercent;
         double monthPayment;
         double degree;
         double amount;
-        monthPercent = b / c / 100;
+        monthPercent = percent / month /100;
         amount = (1 + monthPercent);
-        degree = Math.pow(amount, d);
+        degree = Math.pow(amount, paymentMonth);
 
-        monthPayment = a * monthPercent * (degree) / ((degree) - 1);
+        monthPayment = amountCredit * monthPercent * (degree) / ((degree) - 1);
         return monthPayment;
 
 

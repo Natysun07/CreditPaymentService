@@ -4,7 +4,7 @@ public class Main {
         int amountCredit = 1_000_000;
         double percent = 9.99;
         int month = 12;
-        int paymentMonth = 36;
+        int paymentMonth = 24;
         double payment = service.calculate(amountCredit, percent, month, paymentMonth);
         payment = (int) payment;
         System.out.println(payment);
