@@ -2,11 +2,13 @@ public class Main {
     public static void main(String[] args) {
         CalkService service = new CalkService();
         int amountCredit = 1_000_000;
-        double percent = 9.99;
-        int month = 12;
-        int paymentMonth = 24;
-        double payment = service.calculate(amountCredit, percent, month, paymentMonth);
-        payment = (int) payment;
-        System.out.println(payment);
+        double monthPaymentOneYearCredit = service.calculate (12, amountCredit);
+        System.out.println(monthPaymentOneYearCredit);
+
+        double monthPaymentTwoYearsCredit = service.calculate(24, amountCredit);
+        System.out.println(monthPaymentTwoYearsCredit);
+
+        double monthlaymentThreeYearsCredit = service.calculate(36, amountCredit);
+        System.out.println(monthlaymentThreeYearsCredit);
     }
 }
