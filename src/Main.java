@@ -8,7 +8,7 @@ public class Main {
         double monthPaymentTwoYearsCredit = service.calculate(24, amountCredit);
         System.out.println(monthPaymentTwoYearsCredit);
 
-        double monthlaymentThreeYearsCredit = service.calculate(36, amountCredit);
-        System.out.println(monthlaymentThreeYearsCredit);
+        double monthPaymentThreeYearsCredit = service.calculate(36, amountCredit);
+        System.out.println(monthPaymentThreeYearsCredit);
     }
 }
