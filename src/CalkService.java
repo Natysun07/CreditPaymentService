@@ -5,7 +5,7 @@ public class CalkService {
         int month = 12;
         double degree;
         double amount;
-        monthPercent = percent / month /100;
+        monthPercent = percent / month / 100;
         amount = (1 + monthPercent);
         degree = Math.pow(amount, term);
 
